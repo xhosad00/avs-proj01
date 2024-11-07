@@ -1,0 +1,8 @@
+# hash file version: 3
+1	1	/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib/libz.so.1	12656	12755		0	99	7557d07601399fc808eba3d3c29d0866	0	1	0	0	0
+2	3	/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib/libz.so.1	12560	12766		0	206	7557d07601399fc808eba3d3c29d0866	0	1	0	0	0
+3	19	/home/xhosad00/avs-proj01/build/mandelbrot	21584	21599	/home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc	52	15	c038b0a32024f16e2fac0f2603ecde7c	1	1	0	0	0
+4	21	/home/xhosad00/avs-proj01/build/mandelbrot	22208	22374	/home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc	74	166	c038b0a32024f16e2fac0f2603ecde7c	1	1	0	0	0
+5	22	/home/xhosad00/avs-proj01/build/mandelbrot	22112	21760	/home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc	50	530	c038b0a32024f16e2fac0f2603ecde7c	0	1	0	0	0
+6	23	/home/xhosad00/avs-proj01/build/mandelbrot	21760	22701	/home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc	54	828	c038b0a32024f16e2fac0f2603ecde7c	0	1	0	0	0
+7	24	/home/xhosad00/avs-proj01/build/mandelbrot	21952	21999	/home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc	59	47	c038b0a32024f16e2fac0f2603ecde7c	1	1	0	0	0

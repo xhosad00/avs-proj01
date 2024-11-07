@@ -1,0 +1,62 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	     19424	    0	      0	                                  _start	/home/xhosad00/avs-proj01/build/mandelbrot	19424	47	0	16	0	0	0	0	0	0	0	0
+         2	        -1	     19469	    0	      0	                                  _start	/home/xhosad00/avs-proj01/build/mandelbrot	19424	47	0	16	0	0	0	0	0	0	0	0
+         3	        34	    144530	    1	      1	     [Loop@0x23404 in __libc_start_main]	/lib64/libc.so.6	144388	230	0	4	0	0	0	0	0	0	0	0
+         4	         3	    159825	    0	      0	                                    main	/home/xhosad00/avs-proj01/build/mandelbrot	149088	16072	0	17	0	0	0	0	0	0	0	0
+         5	         4	    173007	    0	      0	evaluateCalculator<LineMandelCalculator>	/home/xhosad00/avs-proj01/build/mandelbrot	172928	1240	0	18	0	0	0	0	0	0	0	0
+         6	        41	     21584	    1	      0	[Loop at line 52 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	21584	15	21599	19	0	0	0	0	0	0	0	0
+         7	        45	     22290	    1	      0	[Loop at line 74 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22208	166	22374	21	0	0	0	0	0	0	0	0
+         8	        47	     21958	    1	      0	[Loop at line 59 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	21952	47	21999	24	0	0	0	0	0	0	0	0
+         9	        45	     22342	    1	      0	[Loop at line 74 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22208	166	22374	21	0	0	0	0	0	0	0	0
+        10	        45	     22233	    1	      0	[Loop at line 74 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22208	166	22374	21	0	0	0	0	0	0	0	0
+        11	        45	     22252	    1	      0	[Loop at line 74 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22208	166	22374	21	0	0	0	0	0	0	0	0
+        12	        45	     22258	    1	      0	[Loop at line 74 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22208	166	22374	21	0	0	0	0	0	0	0	0
+        13	        45	     22354	    1	      0	[Loop at line 74 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22208	166	22374	21	0	0	0	0	0	0	0	0
+        14	        45	     22303	    1	      0	[Loop at line 74 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22208	166	22374	21	0	0	0	0	0	0	0	0
+        15	        45	     22277	    1	      0	[Loop at line 74 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22208	166	22374	21	0	0	0	0	0	0	0	0
+        16	        45	     22361	    1	      0	[Loop at line 74 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22208	166	22374	21	0	0	0	0	0	0	0	0
+        17	        45	     22309	    1	      0	[Loop at line 74 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22208	166	22374	21	0	0	0	0	0	0	0	0
+        18	        45	     22270	    1	      0	[Loop at line 74 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22208	166	22374	21	0	0	0	0	0	0	0	0
+        19	        45	     22365	    1	      0	[Loop at line 74 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22208	166	22374	21	0	0	0	0	0	0	0	0
+        20	         4	    173676	    0	      0	evaluateCalculator<LineMandelCalculator>	/home/xhosad00/avs-proj01/build/mandelbrot	172928	1240	0	18	0	0	0	0	0	0	0	0
+        21	        20	    252351	    0	      0	                     cnpy::npz_save<int>	/home/xhosad00/avs-proj01/build/mandelbrot	252192	19278	0	25	0	0	0	0	0	0	0	0
+        22	        21	    462956	    0	      1	                        __fopen_internal	/lib64/libc.so.6	462832	254	0	6	0	0	0	0	0	0	0	0
+        23	        22	    511562	    0	      1	                          _IO_file_fopen	/lib64/libc.so.6	511328	1167	0	7	0	0	0	0	0	0	0	0
+        24	        23	    511125	    0	      1	                           _IO_file_open	/lib64/libc.so.6	511088	231	0	8	0	0	0	0	0	0	0	0
+        25	        24	    971506	    0	      1	                                __open64	/lib64/libc.so.6	971424	302	0	9	0	0	0	0	0	0	0	0
+        26	        20	    253211	    0	      0	                     cnpy::npz_save<int>	/home/xhosad00/avs-proj01/build/mandelbrot	252192	19278	0	25	0	0	0	0	0	0	0	0
+        27	        39	     12682	    1	      0	                [Loop@0x3170 in crc32_z]	/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib/libz.so.1	12656	99	12755	1	0	0	0	0	0	0	0	0
+        28	        20	    267988	    0	      0	                     cnpy::npz_save<int>	/home/xhosad00/avs-proj01/build/mandelbrot	252192	19278	0	25	0	0	0	0	0	0	0	0
+        29	        28	    465531	    0	      1	                                  fwrite	/lib64/libc.so.6	465312	422	0	10	0	0	0	0	0	0	0	0
+        30	        29	    510253	    0	      1	                         _IO_file_xsputn	/lib64/libc.so.6	509888	488	0	11	0	0	0	0	0	0	0	0
+        31	        30	    505198	    0	      1	                            new_do_write	/lib64/libc.so.6	505104	338	0	12	0	0	0	0	0	0	0	0
+        32	        36	    508412	    1	      1	        [Loop@0x7c1f8 in _IO_file_write]	/lib64/libc.so.6	508408	50	0	13	0	0	0	0	0	0	0	0
+        33	        32	    972360	    0	      1	                                 __write	/lib64/libc.so.6	972336	161	0	15	0	0	0	0	0	0	0	0
+        34	         2	    144388	    0	      1	                       __libc_start_main	/lib64/libc.so.6	144288	446	0	5	0	0	0	0	0	0	0	0
+        35	         2	    144530	    0	      1	                       __libc_start_main	/lib64/libc.so.6	144288	446	0	5	0	0	0	0	0	0	0	0
+        36	        31	    508408	    0	      1	                          _IO_file_write	/lib64/libc.so.6	508368	156	0	14	0	0	0	0	0	0	0	0
+        37	        31	    508412	    0	      1	                          _IO_file_write	/lib64/libc.so.6	508368	156	0	14	0	0	0	0	0	0	0	0
+        38	        26	     12560	    0	      0	                                 crc32_z	/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib/libz.so.1	12080	1023	0	2	0	0	0	0	0	0	0	0
+        39	        38	     12656	    1	      0	                [Loop@0x3110 in crc32_z]	/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib/libz.so.1	12560	206	12766	3	0	0	0	0	0	0	0	0
+        40	        26	     12682	    0	      0	                                 crc32_z	/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib/libz.so.1	12080	1023	0	2	0	0	0	0	0	0	0	0
+        41	         5	     21584	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        42	         5	     21584	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        43	         5	     21760	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        44	        43	     22112	    1	      0	[Loop at line 54 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22112	273	22701	23	0	0	0	0	0	0	0	0
+        45	        44	     22208	    1	      0	[Loop at line 50 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	22112	273	21760	22	0	0	0	0	0	0	0	0
+        46	         5	     22290	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        47	        43	     21952	    1	      0	[Loop at line 54 in LineMandelCalculator::calculateMandelbrot]	/home/xhosad00/avs-proj01/build/mandelbrot	21920	86	22701	23	0	0	0	0	0	0	0	0
+        48	         5	     21958	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        49	         5	     22342	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        50	         5	     22233	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        51	         5	     22252	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        52	         5	     22258	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        53	         5	     22354	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        54	         5	     22303	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        55	         5	     22277	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        56	         5	     22361	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        57	         5	     22309	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        58	         5	     22270	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        59	         5	     22365	    0	      0	LineMandelCalculator::calculateMandelbrot	/home/xhosad00/avs-proj01/build/mandelbrot	21520	1525	0	20	0	0	0	0	0	0	0	0
+        60	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	27	0	0	0	0	0	0	0	0

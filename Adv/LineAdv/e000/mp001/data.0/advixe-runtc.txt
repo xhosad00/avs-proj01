@@ -1,0 +1,29 @@
+
+=== Start: [2024/11/06 20:14:45] === 
+Analysis started...
+Result file: /home/xhosad00/avs-proj01/Adv/LineAdv/e000/mp001/mp001.advixe 
+Found target process /home/xhosad00/avs-proj01/build/mandelbrot (PID = 1894672). Analysis started... 
+Loaded module: /home/xhosad00/avs-proj01/build/mandelbrot. 
+Loaded module: /lib64/ld-linux-x86-64.so.2. 
+Loaded module: [vdso]. 
+Loaded module: /apps/all/zlib/1.2.12-GCCcore-11.3.0/lib/libz.so.1. 
+Loaded module: /apps/all/GCCcore/11.3.0/lib64/libstdc++.so.6. 
+Loaded module: /lib64/libm.so.6. 
+Loaded module: /apps/all/GCCcore/11.3.0/lib64/libgcc_s.so.1. 
+Loaded module: /lib64/libdl.so.2. 
+Loaded module: /lib64/libc.so.6. 
+Unloaded module: /home/xhosad00/avs-proj01/build/mandelbrot. 
+Unloaded module: /lib64/ld-linux-x86-64.so.2. 
+Unloaded module: [vdso]. 
+Unloaded module: /apps/all/zlib/1.2.12-GCCcore-11.3.0/lib/libz.so.1. 
+Unloaded module: /apps/all/GCCcore/11.3.0/lib64/libstdc++.so.6. 
+Unloaded module: /lib64/libm.so.6. 
+Unloaded module: /apps/all/GCCcore/11.3.0/lib64/libgcc_s.so.1. 
+Unloaded module: /lib64/libdl.so.2. 
+Unloaded module: /lib64/libc.so.6. 
+Process /home/xhosad00/avs-proj01/build/mandelbrot (PID = 1894672) has terminated. 
+Warning: No SITE annotations were encountered, so no stride/alignment data can be reported. 
+Application exit code: 0 
+Result file: /home/xhosad00/avs-proj01/Adv/LineAdv/e000/mp001/mp001.advixe 
+Analysis completed
+=== End: [2024/11/06 20:14:52] === 

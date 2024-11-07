@@ -1,0 +1,16 @@
+-r
+/home/xhosad00/avs-proj01/Adv/LineAdv/e000/mp000
+--tool=map
+--record-stack-frame
+--sample-size=300000
+--record-mem-allocations
+--app-working-dir=/home/xhosad00/avs-proj01/Adv
+--
+/home/xhosad00/avs-proj01/build/mandelbrot
+-c
+line
+-s
+1024
+-i
+100
+line.npz

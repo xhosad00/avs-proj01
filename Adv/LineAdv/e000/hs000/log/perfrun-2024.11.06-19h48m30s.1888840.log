@@ -1,0 +1,103 @@
+10 [22657697223424] INFO perfrun.launcher <> - Launcher main begin
+12 [22657697223424] INFO perfrun.launcher <> - MessageCatalogInit finished
+12 [22657697223424] INFO perfrun.launcher <> - Launcher instance created
+12 [22657697223424] INFO perfrun.launcher <> - argc = 7; cmdline = /apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/bin64/advixe-runss --ui-output-format xml --ui-output-fd 81 --option-file /home/xhosad00/avs-proj01/Adv/LineAdv/e000/hs000/config/runss.options 
+84 [22657697223424] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+84 [22657697223424] INFO perfrun.launcher <> - create file finder object
+84 [22657697223424] INFO perfrun.launcher <> - create a result directory: pattern = /home/xhosad00/avs-proj01/Adv/LineAdv/e000/hs000 pid = 4294967295
+89 [22657697223424] INFO perfrun.sdk <> - checked that the directory /home/xhosad00/avs-proj01/Adv/LineAdv/e000/hs000 is a local directory
+89 [22657697223424] INFO perfrun.sdk <> - the directory /home/xhosad00/avs-proj01/Adv/LineAdv/e000/hs000 is located on a share or its FS ID is unknown 26985
+89 [22657697223424] INFO perfrun.sdk <> - checked that the directory /tmp/advixe-tmp-xhosad00 is a local directory
+89 [22657697223424] INFO perfrun.sdk <> - the directory /tmp/advixe-tmp-xhosad00 is a local directory with FS type ID 16914836
+90 [22657697223424] INFO perfrun.launcher <> - Create a local result directory /tmp/advixe-tmp-xhosad00/advixe-res-1888840-12175695042330236 due to the user result path /home/xhosad00/avs-proj01/Adv/LineAdv/e000/hs000 is located on a share
+90 [22657697223424] INFO perfrun.launcher <> - create data directory = /tmp/advixe-tmp-xhosad00/advixe-res-1888840-12175695042330236/data.0
+90 [22657697223424] INFO perfrun.launcher <> - create data directory = /home/xhosad00/avs-proj01/Adv/LineAdv/e000/hs000/data.0
+90 [22657697223424] INFO perfrun.launcher <> - Creating the master collection flag
+91 [22657697223424] INFO perfrun.launcher <> - Done creating the master collection flag
+94 [22657566779136] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+94 [22657566779136] INFO perfrun.sdk <> - Allocating TMU :/tmp/advixe-tmp-xhosad00/advixe-res-1888840-12175695042330236/data.0/systemcollector-1888840-cn23.barbora.it4i.cz.sc
+95 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+95 [22657566779136] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+95 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+95 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+95 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+95 [22657566779136] INFO perfrun.mrte <> - system-wide mode is 0
+95 [22657566779136] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+127 [22657566779136] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=/tmp/advixe-tmp-xhosad00/advixe-res-1888840-12175695042330236/data.0
+127 [22657566779136] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=cn23.barbora.it4i.cz
+127 [22657566779136] INFO perfrun.mrte <> - Data directory: /tmp/advixe-tmp-xhosad00/advixe-res-1888840-12175695042330236/data.0
+127 [22657566779136] INFO perfrun.mrte <> - Mrte plugin is initialized
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.tpss <> - initialize tpss controller
+127 [22657566779136] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+127 [22657566779136] INFO perfrun.tpss <> - default obj-size-min=1024
+127 [22657566779136] INFO perfrun.tpss <> - default hash-table-size=0
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657566779136] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+127 [22657697223424] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/lib32/runtime:/apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/lib64/runtime:/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib:/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib:/apps/all/GCCcore/11.3.0/lib64:/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib:/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib:/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib:/apps/all/ncurses/6.3-GCCcore-11.3.0/lib:/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8:/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib:/apps/all/binutils/2.42-GCCcore-13.3.0/lib:/apps/all/Mesa/21.1.1-GCCcore-10.3.0/lib:/apps/all/LLVM/11.1.0-GCCcore-10.3.0/lib:/apps/all/libunwind/1.4.0-GCCcore-10.3.0/lib:/apps/all/libglvnd/1.3.3-GCCcore-10.3.0/lib:/apps/all/libdrm/2.4.106-GCCcore-10.3.0/lib:/apps/all/GTK2/2.24.33-GCCcore-10.3.0/lib:/apps/all/Pango/1.48.5-GCCcore-10.3.0/lib:/apps/all/FriBidi/1.0.10-GCCcore-10.3.0/lib:/apps/all/HarfBuzz/2.8.1-GCCcore-10.3.0/lib:/apps/all/ICU/69.1-GCCcore-10.3.0/lib:/apps/all/cairo/1.16.0-GCCcore-10.3.0/lib:/apps/all/pixman/0.40.0-GCCcore-10.3.0/lib:/apps/all/Gdk-Pixbuf/2.42.6-GCCcore-10.3.0/lib:/apps/all/X11/20210518-GCCcore-10.3.0/lib:/apps/all/libpciaccess/0.16-GCCcore-10.3.0/lib:/apps/all/fontconfig/2.13.93-GCCcore-10.3.0/lib:/apps/all/util-linux/2.36-GCCcore-10.3.0/lib:/apps/all/freetype/2.10.4-GCCcore-10.3.0/lib:/apps/all/Brotli/1.0.9-GCCcore-10.3.0/lib:/apps/all/libpng/1.6.37-GCCcore-10.3.0/lib:/apps/all/expat/2.2.9-GCCcore-10.3.0/lib:/apps/all/LibTIFF/4.2.0-GCCcore-10.3.0/lib:/apps/all/zstd/1.4.9-GCCcore-10.3.0/lib:/apps/all/lz4/1.9.3-GCCcore-10.3.0/lib:/apps/all/jbigkit/2.1-GCCcore-10.3.0/lib:/apps/all/libjpeg-turbo/2.0.6-GCCcore-10.3.0/lib:/apps/all/ATK/2.36.0-GCCcore-10.3.0/lib:/apps/all/GLib/2.68.2-GCCcore-10.3.0/lib:/apps/all/PCRE2/10.36-GCCcore-10.3.0/lib:/apps/all/gettext/0.21-GCCcore-10.3.0/lib:/apps/all/libxml2/2.9.10-GCCcore-10.3.0/lib:/apps/all/libffi/3.3-GCCcore-10.3.0/lib64:/apps/all/Qhull/2020.2-GCCcore-11.3.0/lib:/apps/all/libdeflate/1.10-GCCcore-11.3.0/lib:/apps/all/Tk/8.6.12-GCCcore-11.3.0/lib:/apps/all/SciPy-bundle/2022.05-intel-2022a/lib/python3.10/site-packages/numpy/core/lib:/apps/all/Python/3.10.4-GCCcore-11.3.0/lib:/apps/all/OpenSSL/1.1/lib:/apps/all/GMP/6.2.1-GCCcore-11.3.0/lib:/apps/all/SQLite/3.38.3-GCCcore-11.3.0/lib:/apps/all/Tcl/8.6.12-GCCcore-11.3.0/lib:/apps/all/libreadline/8.1.2-GCCcore-11.3.0/lib:/apps/all/imkl-FFTW/2022.1.0-iimpi-2022a/lib:/apps/all/imkl/2022.1.0/mkl/2022.1.0/lib/intel64:/apps/all/imkl/2022.1.0/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/apps/all/impi/2021.6.0-intel-compilers-2022.1.0/mpi/2021.6.0/libfabric/lib:/apps/all/impi/2021.6.0-intel-compilers-2022.1.0/mpi/2021.6.0/lib/release:/apps/all/impi/2021.6.0-intel-compilers-2022.1.0/mpi/2021.6.0/lib:/apps/all/UCX/1.12.1-GCCcore-11.3.0/lib:/apps/all/numactl/2.0.14-GCCcore-11.3.0/lib
+127 [22657697223424] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/lib32/runtime/libittnotify_collector.so
+127 [22657697223424] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/lib64/runtime/libittnotify_collector.so
+127 [22657697223424] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+127 [22657697223424] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/lib32/runtime/libittnotify_collector.so
+127 [22657697223424] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/lib64/runtime/libittnotify_collector.so
+127 [22657697223424] INFO perfrun.launcher <> - set environment variable: VS_PROFILER = libittnotify_collector.so
+127 [22657697223424] INFO perfrun.launcher <> - set environment variable: OMP_TOOL_LIBRARIES = /apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/lib32/runtime/libittnotify_collector.so:/apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/lib64/runtime/libittnotify_collector.so
+128 [22657697223424] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+128 [22657697223424] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+128 [22657697223424] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+128 [22657697223424] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+128 [22657697223424] INFO perfrun.launcher <> - set environment variable: OMP_TOOL = disabled
+128 [22657697223424] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = /tmp/advixe-tmp-xhosad00/advixe-res-1888840-12175695042330236/data.0
+128 [22657697223424] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = cn23.barbora.it4i.cz
+128 [22657697223424] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+128 [22657697223424] INFO perfrun.launcher <> - Launcher: command line to start before modification = /home/xhosad00/avs-proj01/build/mandelbrot -c line -s 1024 -i 100 line.npz
+129 [22657697223424] INFO perfrun.launcher <> - Launcher: command line to start after modification = /apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/bin64/pin -error_file /tmp/advixe-tmp-xhosad00/advixe-res-1888840-12175695042330236/data.0/pinerr.tpsslog -detach_reattach -follow_execv -tool_load_option deepbind -t64 /apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/lib64/libtpsstool.so -t /apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/lib32/libtpsstool.so -server_name tpss_ipc.1888840 -prd_dir /apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0 -- /home/xhosad00/avs-proj01/build/mandelbrot -c line -s 1024 -i 100 line.npz
+129 [22657697223424] INFO perfrun.launcher <> - ProcessCreator object was created
+130 [22657697223424] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+134 [22657566779136] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:797
+134 [22657566779136] WARN perfrun.system <> - Folder "/var/run/libvirt/qemu/"doesn't exist, at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:810
+137 [22657566779136] WARN perfrun.system <> - SEP tool is not available, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:564
+137 [22657566779136] WARN perfrun.system <> - SEP driver is not available, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:720
+137 [22657566779136] WARN perfrun.system <> - amplxe-perf tool is not available, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:580
+137 [22657566779136] WARN perfrun.system <> - Device mapping through perf is not available on current kernel, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:918
+140 [22657566779136] WARN perfrun.system <> - SEP tool is not available, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:564
+140 [22657566779136] WARN perfrun.system <> - SEP driver is not available, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:720
+140 [22657566779136] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:197
+143 [22657566779136] INFO perfrun.vdso <> - Helper runtool '/apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/bin32/advixe-runss -dump-vdso -r /tmp/advixe-tmp-xhosad00/advixe-res-1888840-12175695042330236 --tmp-dir /tmp/advixe-tmp-xhosad00' returned 1
+237 [22657566779136] INFO perfrun.vdso <> - Helper runtool '/apps/all/Advisor/2021.4.0-GCCcore-10.3.0/advisor/2021.4.0/bin64/advixe-runss -dump-vdso -r /tmp/advixe-tmp-xhosad00/advixe-res-1888840-12175695042330236 --tmp-dir /tmp/advixe-tmp-xhosad00' returned 0
+237 [22657566779136] INFO perfrun.itt <> - start itt controller for pid #1888852
+237 [22657566779136] INFO perfrun.tpss <> - start tpss controller for pid #1888852
+288 [22657697223424] INFO perfrun.launcher <> - Launcher: all plugins were started
+288 [22657697223424] INFO perfrun.launcher <> - DirectoryMonitor object was created
+288 [22657697223424] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+288 [22657697223424] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+288 [22657697223424] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+288 [22657697223424] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+290 [22657697223424] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+694 [22657697223424] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 0
+696 [22657566779136] INFO perfrun.itt <> - stop itt controller
+696 [22657566779136] INFO perfrun.itt <> - detach itt controller
+696 [22657566779136] INFO perfrun.tpss <> - stop tpss controller
+697 [22657566779136] INFO perfrun.sdk <> - De-allocating TMU: /tmp/advixe-tmp-xhosad00/advixe-res-1888840-12175695042330236/data.0/systemcollector-1888840-cn23.barbora.it4i.cz.sc
+697 [22657566779136] INFO perfrun.system <> - closed the system trace file: /tmp/advixe-tmp-xhosad00/advixe-res-1888840-12175695042330236/data.0/systemcollector-1888840-cn23.barbora.it4i.cz.sc
+697 [22657697223424] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+697 [22657697223424] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+697 [22657697223424] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+697 [22657697223424] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+697 [22657697223424] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:212
+703 [22657697223424] INFO perfrun.launcher <> - Application exit code: 0
+703 [22657697223424] INFO perfrun.launcher <> - Exit code: 0
