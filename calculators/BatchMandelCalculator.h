@@ -17,7 +17,12 @@ public:
     int * calculateMandelbrot();
 
 private:
-    // @TODO add all internal parameters
+    // buffer for output data (iteration count for each point)
+    int *data;
+    // real and image values for each point in a row
+    float *imag;
+    float *real;
+    const int batchBasicSize = 64;
 };
 
 #endif

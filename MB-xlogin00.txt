@@ -28,4 +28,4 @@ velikostech domény. (1b)
 5. Jaký vliv na výkonnost má symetrie? Lze tento rozdíl pozorovat v Intel Advisor? 
 (nápověda: instrukce) (0.5b)
 ============================================================================== 
-
+Díky symetrii stačí počítat polovinu prostoru (nad nebo pod osou x, včetně). Je ale potřeba překopírovat data z jedné poloviny do druhé. Jelikož jde o zrychlení, v Advisoru bude viditelné.

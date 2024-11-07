@@ -50,7 +50,7 @@ int * LineMandelCalculator::calculateMandelbrot () {
 	int *pdata = data;
 	float *zReal = this->real;
 	float *zImag = this->imag;
-	bool *phitOverMax = this->hitOverMax;
+	// bool *phitOverMax = this->hitOverMax;
 	
 	#pragma omp simd aligned(pdata : ALIGNMENT)
 	for (int i = 0; i < width * height; i++)
@@ -75,7 +75,7 @@ int * LineMandelCalculator::calculateMandelbrot () {
 		for (int i = 0; i < limit; ++i)
 		{
 			// check if all points finished
-			// #pragma omp parallel for reduction(& : allFinished)
+			// #pragma omp parallel for reduction(&7 : allFinished)
 			// for (int col = 0; col < width; col++)
 			// {
 			// 	allFinished &= phitOverMax[col];
