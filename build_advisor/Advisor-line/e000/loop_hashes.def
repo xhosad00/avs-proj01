@@ -1,0 +1,10 @@
+# hash file version: 3
+1	7	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	23856	23870	/home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc	27	14	8289fac3665cf25dceabc195e372ca34	1	1	0	0	0
+2	9	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	24928	25248	/home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc	65	306	8289fac3665cf25dceabc195e372ca34	0	1	0	0	0
+3	11	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	24864	25322,24384,25919	/home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc	84	964	8289fac3665cf25dceabc195e372ca34	1	1	0	0	0
+4	12	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	24384	25963	/home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc	54	1331	8289fac3665cf25dceabc195e372ca34	0	1	0	0	0
+5	13	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	24688	24704	/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/bits/stl_algobase.h	923	16	8289fac3665cf25dceabc195e372ca34	1	1	0	0	0
+6	17	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	24432	24481	/home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc	73	49	8289fac3665cf25dceabc195e372ca34	1	1	0	0	0
+7	21	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	285927	285997		0	70	8289fac3665cf25dceabc195e372ca34	1	1	0	0	0
+8	23	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	26176	26239	/home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc	135	63	8289fac3665cf25dceabc195e372ca34	0	1	0	0	0
+9	24	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	26016	26272	/home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc	130	233	8289fac3665cf25dceabc195e372ca34	1	1	0	0	0

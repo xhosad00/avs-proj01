@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="\home\xhosad00\avs-proj01\calculators\LineMandelCalculator.cc"
+           line_no="65"
+           routine="LineMandelCalculator::calculateMandelbrot"
+           is_vectorized="2"
+           self_time="6.599830E-01"
+           total_time="6.599830E-01"
+           trip_counts="768"
+           func_instance="9"
+           priority="0"/>
+  <hotspot filename="\home\xhosad00\avs-proj01\calculators\LineMandelCalculator.cc"
+           line_no="27"
+           routine="LineMandelCalculator::LineMandelCalculator"
+           is_vectorized="1"
+           self_time="1.500237E-01"
+           total_time="1.500237E-01"
+           trip_counts="12582912"
+           func_instance="7"
+           priority="0"/>
+  <hotspot filename="\home\xhosad00\avs-proj01\calculators\LineMandelCalculator.cc"
+           line_no="135"
+           routine="LineMandelCalculator::calculateMandelbrot"
+           is_vectorized="2"
+           self_time="3.000000E-02"
+           total_time="3.000000E-02"
+           trip_counts="768"
+           func_instance="23"
+           priority="0"/>
+  <hotspot filename="\home\xhosad00\avs-proj01\calculators\LineMandelCalculator.cc"
+           line_no="73"
+           routine="LineMandelCalculator::calculateMandelbrot"
+           is_vectorized="1"
+           self_time="9.998817E-03"
+           total_time="9.998817E-03"
+           trip_counts="3072"
+           func_instance="17"
+           priority="0"/>
+  <hotspot filename="\apps\all\GCCcore\11.3.0\lib\gcc\x86_64-pc-linux-gnu\11.3.0\..\..\..\..\include\c++\11.3.0\bits\stl_algobase.h"
+           line_no="923"
+           routine="std::__fill_a1&lt;float*, float&gt;"
+           is_vectorized="1"
+           self_time="9.997430E-03"
+           total_time="9.997430E-03"
+           trip_counts="1536"
+           func_instance="13"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

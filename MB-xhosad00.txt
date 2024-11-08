@@ -1,0 +1,49 @@
+#### Stručně ale věcně odpovězte na následující otázky: ######
+
+1. Jaká byla dosažena výkonnost v Intel Advisoru pro implementace ref, line a batch
+(v GFLOPS)? (0.5b)
+==============================================================================
+Ref: 3.00
+Line: 9.70
+Batch: 11.64
+
+
+2. Porovnejte implementaci referenčního rešení oproti "Line" a "Batch" implementaci. 
+Jakým způsobem jsou načítána data, proč, a jaký to má vliv na výkon. (1b)
+==============================================================================
+Ref a Line - Line pracuje po řádcích s počtem prvků (sloupců) == width. Může tak pracovat SIMD s několika sloupci napříč jedné iterace počítající limit.
+Pomocí redukce ukončuje výpočet dřív, pokud jsou všechny body vyhodnocené.
+Výkon se tím násobně zlepší oproti skalárním zpracování. Důležité je korektní přednačítání dat, zarovnání a vyřešení aliasingu.
+
+
+Ref a Batch - Batch pracuje podobně jako Line, ale pracuje pouze nad množstvím prvků == batchSize. Také tak pracuje SIMD.
+Pomocí redukce ukončuje výpočet dřív, pokud jsou všechny body vyhodnocené.
+Díky lepším přístupu do paměti (nepracuje s celým řádkem ale pouze s částí) má vyšší výkon než Line. Důležité je korektní přednačítání dat, zarovnání paměti a vyřešení aliasingu.
+
+3. Porovnejte Roofline všech modelů. Jsou implementace memory 
+bound? Jaká je vaše aritmetická intenzita? Dokázali byste ji přibližně spočítat 
+i ručně a jak? (1b)
+==============================================================================
+Ref: je compute bound, aritmetická intenzita = 13.81 FLOP/Byte
+Line: je memory bound, aritmetická intenzita = 0.32 FLOP/Byte
+Batch: je memory bound, aritmetická intenzita = 0.35 FLOP/Byte
+
+Porovní modelů:
+Ref: nevektorizuje a nepracuje moc s pamětí -> je aritmeticky náročný
+Line a Batch: oba převážně pracují s pamětí (memory bound), přičemž batch dosahuje
+
+Ruční počet: míra kolik operací je provedeno za bajtů je načteno / uloženo  Ai = (flops per second) / (bytes per second)
+
+4. Komentujte vliv velikosti cache na výkonnost a chování na větších 
+velikostech domény. (1b)
+==============================================================================
+Při vhodném pracování s cache, její zvětšení program urychlí. Při velkém množství skoků by často mohli být bloky invalidovány a režie správy Cache by tak více zpomalovala běh.
+Dále by bylo nutné korektně zarovnat paměti proměných (v Line a Batch) a batchSize u Batch implementace.
+
+
+
+5. Jaký vliv na výkonnost má symetrie? Lze tento rozdíl pozorovat v Intel Advisor? 
+(nápověda: instrukce) (0.5b)
+============================================================================== 
+Díky symetrii stačí počítat polovinu prostoru (nad nebo pod osou x, včetně). Je ale potřeba překopírovat data z jedné poloviny do druhé.
+Jelikož jde o zrychlení, v Advisoru bude viditelné, a to zrychlením výpočetní smyčky  Mandelbrotovy množiny a zobrazení kopírovací smyčky.

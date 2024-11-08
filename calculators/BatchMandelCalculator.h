@@ -22,7 +22,13 @@ private:
     // real and image values for each point in a row
     float *imag;
     float *real;
-    const int batchBasicSize = 64;
+    // indicates if point in row went over the limiting z_n absolute value
+    bool *hitOverMax;
+    
+    const int batchBasicSize = 128;
+
+    // real values of complex numbers, precounted for speedup
+    float *realPrecounted;
 };
 
 #endif

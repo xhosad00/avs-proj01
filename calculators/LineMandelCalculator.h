@@ -22,4 +22,7 @@ private:
     float *real;
     // indicates if point in row went over the limiting z_n absolute value
     bool *hitOverMax;
+
+    // real values of complex numbers, precounted for speedup
+    float *realPrecounted;
 };

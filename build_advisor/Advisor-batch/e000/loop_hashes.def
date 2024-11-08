@@ -1,0 +1,9 @@
+# hash file version: 3
+1	7	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	21120	21134	/home/xhosad00/avs-proj01/calculators/BatchMandelCalculator.cc	25	14	8289fac3665cf25dceabc195e372ca34	1	1	0	0	0
+2	9	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	22272	22592	/home/xhosad00/avs-proj01/calculators/BatchMandelCalculator.cc	61	318	8289fac3665cf25dceabc195e372ca34	0	1	0	0	0
+3	11	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	22224	21984,23176	/home/xhosad00/avs-proj01/calculators/BatchMandelCalculator.cc	72	886	8289fac3665cf25dceabc195e372ca34	1	1	0	0	0
+4	12	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	21984	21664	/home/xhosad00/avs-proj01/calculators/BatchMandelCalculator.cc	68	1121	8289fac3665cf25dceabc195e372ca34	0	1	0	0	0
+5	13	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	21664	23305	/home/xhosad00/avs-proj01/calculators/BatchMandelCalculator.cc	61	1434	8289fac3665cf25dceabc195e372ca34	0	1	0	0	0
+6	14	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	22016	22092	/home/xhosad00/avs-proj01/calculators/BatchMandelCalculator.cc	74	76	8289fac3665cf25dceabc195e372ca34	1	1	0	0	0
+7	15	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	23520	23585	/home/xhosad00/avs-proj01/calculators/BatchMandelCalculator.cc	131	65	8289fac3665cf25dceabc195e372ca34	0	1	0	0	0
+8	16	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	23360	23616	/home/xhosad00/avs-proj01/calculators/BatchMandelCalculator.cc	126	244	8289fac3665cf25dceabc195e372ca34	1	1	0	0	0

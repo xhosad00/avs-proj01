@@ -1,0 +1,419 @@
+Global optimization report for : _ZN20LineMandelCalculatorC2Ejj
+
+LOOP BEGIN at /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (25, 2)
+    remark #15569: Compiler has chosen to target XMM/YMM vector. Try using -mprefer-vector-width=512 to override.
+    remark #15301: SIMD LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 8
+    remark #15388: vectorization support: unmasked aligned unit stride store: [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (27, 3) ] 
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 3.000000 
+    remark #15477: vector cost: 0.625000 
+    remark #15478: estimated potential speedup: 4.265625 
+    remark #15309: vectorization support: normalized vectorization overhead 4.796875
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15449: unmasked aligned unit stride stores: 1 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+
+LOOP BEGIN at /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (25, 2)
+<Remainder loop for vectorization>
+LOOP END
+=================================================================
+
+Global optimization report for : _ZN20LineMandelCalculatorD2Ev
+=================================================================
+
+Global optimization report for : _ZN20LineMandelCalculator19calculateMandelbrotEv
+
+LOOP BEGIN at /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (65, 2)
+
+    LOOP BEGIN at /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (70, 3)
+        remark #15569: Compiler has chosen to target XMM/YMM vector. Try using -mprefer-vector-width=512 to override.
+        remark #15301: SIMD LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 4
+        remark #15389: vectorization support: unmasked unaligned unit stride store: zReal zReal zReal zReal [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (74, 4) ] 
+        remark #15389: vectorization support: unmasked unaligned unit stride store: realPre realPre realPre [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (75, 4) ] 
+        remark #15475: --- begin vector loop cost summary ---
+        remark #15476: scalar cost: 8.000000 
+        remark #15477: vector cost: 2.343750 
+        remark #15478: estimated potential speedup: 3.296875 
+        remark #15309: vectorization support: normalized vectorization overhead 0.843750
+        remark #15488: --- end vector loop cost summary ---
+        remark #15447: --- begin vector loop memory reference summary ---
+        remark #15451: unmasked unaligned unit stride stores: 2 
+        remark #15474: --- end vector loop memory reference summary ---
+    LOOP END
+
+    LOOP BEGIN at /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (70, 3)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/bits/stl_algobase.h (923, 7)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 8
+        remark #15389: vectorization support: unmasked unaligned unit stride store: zImag __first __first __first zImag zImag zImag [ /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/bits/stl_algobase.h (924, 11) ] 
+        remark #15475: --- begin vector loop cost summary ---
+        remark #15476: scalar cost: 3.000000 
+        remark #15477: vector cost: 0.671875 
+        remark #15478: estimated potential speedup: 4.000000 
+        remark #15309: vectorization support: normalized vectorization overhead 4.453125
+        remark #15488: --- end vector loop cost summary ---
+        remark #15447: --- begin vector loop memory reference summary ---
+        remark #15451: unmasked unaligned unit stride stores: 1 
+        remark #15474: --- end vector loop memory reference summary ---
+    LOOP END
+
+    LOOP BEGIN at /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/bits/stl_algobase.h (923, 7)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (84, 3)
+
+        LOOP BEGIN at /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (88, 4)
+            remark #15569: Compiler has chosen to target XMM/YMM vector. Try using -mprefer-vector-width=512 to override.
+            remark #15301: SIMD LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 16
+            remark #15389: vectorization support: unmasked unaligned unit stride load: __first __first __first phitOverMax phitOverMax phitOverMax [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (93, 9) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: zReal zReal zReal zReal [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (95, 17) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: zImag __first __first __first zImag zImag zImag [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (96, 17) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: realPre realPre realPre [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (97, 16) ] 
+            remark #15389: vectorization support: masked unaligned unit stride store: pdata pdata pdata [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (103, 7) ] 
+            remark #15389: vectorization support: masked unaligned unit stride store: __first __first __first phitOverMax phitOverMax phitOverMax [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (104, 24) ] 
+            remark #15389: vectorization support: masked unaligned unit stride store: zImag __first __first __first zImag zImag zImag [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (106, 17) ] 
+            remark #15389: vectorization support: masked unaligned unit stride store: zReal zReal zReal zReal [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (107, 17) ] 
+            remark #15475: --- begin vector loop cost summary ---
+            remark #15476: scalar cost: 25.000000 
+            remark #15477: vector cost: 3.687500 
+            remark #15478: estimated potential speedup: 6.265625 
+            remark #15309: vectorization support: normalized vectorization overhead 3.515625
+            remark #15488: --- end vector loop cost summary ---
+            remark #15447: --- begin vector loop memory reference summary ---
+            remark #15450: unmasked unaligned unit stride loads: 1 
+            remark #15456: masked unaligned unit stride loads: 3 
+            remark #15457: masked unaligned unit stride stores: 4 
+            remark #15474: --- end vector loop memory reference summary ---
+            remark #25588: Loop has SIMD reduction
+            remark #15590: vectorization support: add reduction with value type int32_t [calculators/LineMandelCalculator.cc:112:18]
+        LOOP END
+
+        LOOP BEGIN at /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (88, 4)
+        <Remainder loop for vectorization>
+            remark #15440: remainder loop was vectorized (masked)
+            remark #15305: vectorization support: vector length 16
+            remark #15389: vectorization support: masked unaligned unit stride load: __first __first __first phitOverMax phitOverMax phitOverMax [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (93, 9) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: zReal zReal zReal zReal [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (95, 17) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: zImag __first __first __first zImag zImag zImag [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (96, 17) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: realPre realPre realPre [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (97, 16) ] 
+            remark #15389: vectorization support: masked unaligned unit stride store: pdata pdata pdata [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (103, 7) ] 
+            remark #15389: vectorization support: masked unaligned unit stride store: __first __first __first phitOverMax phitOverMax phitOverMax [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (104, 24) ] 
+            remark #15389: vectorization support: masked unaligned unit stride store: zImag __first __first __first zImag zImag zImag [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (106, 17) ] 
+            remark #15389: vectorization support: masked unaligned unit stride store: zReal zReal zReal zReal [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (107, 17) ] 
+            remark #15475: --- begin vector loop cost summary ---
+            remark #15488: --- end vector loop cost summary ---
+            remark #15447: --- begin vector loop memory reference summary ---
+            remark #15456: masked unaligned unit stride loads: 4 
+            remark #15457: masked unaligned unit stride stores: 4 
+            remark #15474: --- end vector loop memory reference summary ---
+            remark #25261: Single iteration loop optimized away
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (130, 2)
+
+    LOOP BEGIN at /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (132, 3)
+        remark #15569: Compiler has chosen to target XMM/YMM vector. Try using -mprefer-vector-width=512 to override.
+        remark #15301: SIMD LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 16
+        remark #15389: vectorization support: unmasked unaligned unit stride load: pdata pdata pdata [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (135, 31) ] 
+        remark #15389: vectorization support: unmasked unaligned unit stride store: pdata pdata pdata [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (135, 4) ] 
+        remark #15475: --- begin vector loop cost summary ---
+        remark #15476: scalar cost: 15.000000 
+        remark #15477: vector cost: 2.453125 
+        remark #15478: estimated potential speedup: 5.734375 
+        remark #15309: vectorization support: normalized vectorization overhead 1.218750
+        remark #15488: --- end vector loop cost summary ---
+        remark #15447: --- begin vector loop memory reference summary ---
+        remark #15450: unmasked unaligned unit stride loads: 1 
+        remark #15451: unmasked unaligned unit stride stores: 1 
+        remark #15474: --- end vector loop memory reference summary ---
+    LOOP END
+
+    LOOP BEGIN at /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (132, 3)
+    <Remainder loop for vectorization>
+        remark #15440: remainder loop was vectorized (masked)
+        remark #15305: vectorization support: vector length 16
+        remark #15389: vectorization support: masked unaligned unit stride load: pdata pdata pdata [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (135, 31) ] 
+        remark #15389: vectorization support: masked unaligned unit stride store: pdata pdata pdata [ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (135, 4) ] 
+        remark #15475: --- begin vector loop cost summary ---
+        remark #15488: --- end vector loop cost summary ---
+        remark #15447: --- begin vector loop memory reference summary ---
+        remark #15456: masked unaligned unit stride loads: 1 
+        remark #15457: masked unaligned unit stride stores: 1 
+        remark #15474: --- end vector loop memory reference summary ---
+        remark #25261: Single iteration loop optimized away
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : _GLOBAL__sub_I_LineMandelCalculator.cc
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: _ZN20BaseMandelCalculatorD2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcE10deallocateEPcm
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcEC2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcED2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx17__is_null_pointerIKcEEbPT_
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
+
+DEAD STATIC FUNC: _ZNSaIcEC2ERKS_
+
+DEAD STATIC FUNC: _ZNSaIcEC2Ev
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE4copyEPcPKcm
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE6assignERcRKc
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE6lengthEPKc
+
+DEAD STATIC FUNC: _ZNSt14pointer_traitsIPKcE10pointer_toERS0_
+
+DEAD STATIC FUNC: _ZNSt14pointer_traitsIPcE10pointer_toERc
+
+DEAD STATIC FUNC: _ZNSt16allocator_traitsISaIcEE10deallocateERS0_Pcm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC2EPcRKS3_
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcPKcS7_
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS3_
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev
+
+DEAD STATIC FUNC: _ZSt10__distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag
+
+DEAD STATIC FUNC: _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_
+
+DEAD STATIC FUNC: _ZSt19__throw_logic_errorPKc
+
+DEAD STATIC FUNC: _ZSt4fillIPbbEvT_S1_RKT0_
+
+DEAD STATIC FUNC: _ZSt4fillIPffEvT_S1_RKT0_
+
+DEAD STATIC FUNC: _ZSt8__fill_aIPbbEvT_S1_RKT0_
+
+DEAD STATIC FUNC: _ZSt8__fill_aIPffEvT_S1_RKT0_
+
+DEAD STATIC FUNC: _ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_
+
+DEAD STATIC FUNC: _ZSt9__fill_a1IPbbEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_
+
+DEAD STATIC FUNC: _ZSt9__fill_a1IPffEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_
+
+DEAD STATIC FUNC: _ZSt9terminatev
+
+DEAD STATIC FUNC: __clang_call_terminate
+
+DEAD STATIC FUNC: __cxa_begin_catch
+
+DEAD STATIC FUNC: __cxa_call_unexpected
+
+DEAD STATIC FUNC: __cxx_global_var_init
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+DEAD STATIC FUNC: llvm.ssa.copy.i32
+
+DEAD STATIC FUNC: llvm.ssa.copy.i64
+
+DEAD STATIC FUNC: llvm.ssa.copy.p0
+
+DEAD STATIC FUNC: strlen
+
+COMPILE FUNC: _ZN20LineMandelCalculatorC2Ejj
+   -> DELETE: llvm.directive.region.entry /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (25,2)
+   -> INLINE: _ZNSaIcEC2Ev /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (20,46) (-35<=375)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2Ev /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (156,7) (-15035<=375)
+   -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS3_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (20,46) (180<=250)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (536,36) (-15000<=375)
+         -> DELETE: strlen /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (399,9)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (534,21) (-35<=375)
+         -> INLINE: _ZNSt14pointer_traitsIPcE10pointer_toERc /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (201,9) (-15035<=375)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC2EPcRKS3_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (534,9) (-40<=375)
+         -> INLINE: _ZNSaIcEC2ERKS_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (165,4) (-40<=375)
+            -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (160,9) (-15040<=375)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (539,2) (-14805<=250)
+         -> INLINE: _ZN9__gnu_cxx17__is_null_pointerIKcEEbPT_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (211,6) (-15030<=487)
+         -> DELETE: _ZSt19__throw_logic_errorPKc /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (212,4)
+         -> INLINE: _ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (215,44) (-15035<=487)
+            -> INLINE: _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (142,9) (-15035<=487)
+            -> INLINE: _ZSt10__distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (141,14) (-15035<=487)
+         -> EXTERN: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (219,14)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (219,6) (-35<=375)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (220,6) (-35<=375)
+         -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (225,26) (-30<=375)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcPKcS7_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (225,6) (10<=250)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (406,9) (5<=250)
+               -> INLINE: _ZNSt11char_traitsIcE6assignERcRKc /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (357,4) (-30<=375)
+               -> INLINE: _ZNSt11char_traitsIcE4copyEPcPKcm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (359,4) (-15030<=250)
+                  -> llvm.memcpy.p0.p0.i64 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (437,33)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (232,2) (-10<=375)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (224,2) (-35<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (225,22) (-30<=375)
+            -> INLINE: _ZNSt11char_traitsIcE6assignERcRKc /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (225,2) (-15035<=375)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (540,7) (-35<=45)
+   -> EXTERN: _ZN20BaseMandelCalculatorC2EjjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (20,2)
+   -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (20,2) (15<=250)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (672,9) (30<=250)
+         -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (239,7) (-25<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (230,16) (-30<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (230,29) (-35<=375)
+               -> INLINE: _ZNSt14pointer_traitsIPKcE10pointer_toERS0_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (211,9) (-15035<=375)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (240,4) (5<=375)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (245,35) (-35<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (245,55) (-30<=375)
+            -> INLINE: _ZNSt16allocator_traitsISaIcEE10deallocateERS0_Pcm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (245,9) (-15010<=375)
+               -> INLINE: _ZN9__gnu_cxx13new_allocatorIcE10deallocateEPcm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (496,13) (-15010<=375)
+                  -> EXTERN: _ZdlPv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (145,2)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (672,23) (-35<=375)
+   -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (20,2) (-35<=375)
+   -> EXTERN: aligned_alloc /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (23,17)
+   -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (20,2) (15<=45)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (672,9) (30<=250)
+         -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (239,7) (-25<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (230,16) (-30<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (230,29) (-35<=375)
+               -> INLINE: _ZNSt14pointer_traitsIPKcE10pointer_toERS0_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (211,9) (-15035<=375)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (240,4) (5<=375)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (245,35) (-35<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (245,55) (-30<=375)
+            -> INLINE: _ZNSt16allocator_traitsISaIcEE10deallocateERS0_Pcm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (245,9) (-15010<=375)
+               -> INLINE: _ZN9__gnu_cxx13new_allocatorIcE10deallocateEPcm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (496,13) (-15010<=375)
+                  -> EXTERN: _ZdlPv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (145,2)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (672,23) (-35<=375)
+   -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (20,2) (-35<=45)
+   -> DELETE: llvm.directive.region.exit /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (25,2)
+   -> EXTERN: aligned_alloc /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (29,19)
+   -> EXTERN: aligned_alloc /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (30,19)
+   -> EXTERN: aligned_alloc /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (31,24)
+   -> EXTERN: aligned_alloc /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (33,29)
+   -> llvm.stacksave.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc
+   -> llvm.stackrestore.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (540,7)
+   -> DELETE: llvm.ssa.copy.i64 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc
+   -> DELETE: llvm.ssa.copy.i64 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (26,2)
+
+COMPILE FUNC: _ZN20LineMandelCalculator19calculateMandelbrotEv
+   -> DELETE: llvm.directive.region.entry /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (132,3)
+   -> DELETE: llvm.directive.region.entry /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (88,4)
+   -> DELETE: llvm.directive.region.entry /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (70,3)
+   -> DELETE: llvm.directive.region.exit /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (70,3)
+   -> INLINE: _ZSt4fillIPffEvT_S1_RKT0_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (78,3) (-15030<=325)
+      -> INLINE: _ZSt8__fill_aIPffEvT_S1_RKT0_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (999,7) (-15025<=325)
+         -> INLINE: _ZSt9__fill_a1IPffEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (969,7) (-15025<=325)
+   -> INLINE: _ZSt4fillIPbbEvT_S1_RKT0_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (79,3) (-15030<=325)
+      -> INLINE: _ZSt8__fill_aIPbbEvT_S1_RKT0_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (999,7) (-15025<=325)
+         -> INLINE: _ZSt9__fill_a1IPbbEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT0_EE7__valueEvE6__typeET_S6_RKS3_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (969,7) (-15025<=325)
+   -> DELETE: llvm.directive.region.exit /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (88,4)
+   -> DELETE: llvm.directive.region.exit /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (132,3)
+   -> DELETE: llvm.vector.reduce.add.v16i32 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (112,18)
+   -> llvm.vector.reduce.add.v16i32 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (112,18)
+   -> DELETE: llvm.vector.reduce.add.v16i32 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (112,18)
+   -> llvm.vector.reduce.add.v16i32 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (112,18)
+   -> DELETE: llvm.ssa.copy.i64 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc
+   -> DELETE: llvm.ssa.copy.i64 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (71,3)
+   -> DELETE: llvm.ssa.copy.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (923,33)
+   -> DELETE: llvm.ssa.copy.i64 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc
+   -> DELETE: llvm.ssa.copy.i32 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc
+   -> DELETE: llvm.ssa.copy.i32 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc
+   -> DELETE: llvm.ssa.copy.i64 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (89,4)
+   -> DELETE: llvm.ssa.copy.i32 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc
+   -> DELETE: llvm.ssa.copy.i32 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (133,3)
+   -> llvm.memset.p0.i64 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (924,11)
+   -> llvm.masked.load.v16f32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (95,17)
+   -> llvm.masked.load.v16f32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (96,17)
+   -> llvm.masked.load.v16f32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (97,16)
+   -> llvm.masked.store.v16i32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (103,20)
+   -> llvm.masked.store.v16i32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (103,20)
+   -> llvm.masked.store.v16i8.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (104,24)
+   -> llvm.masked.store.v16f32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (106,17)
+   -> llvm.masked.store.v16f32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (107,17)
+   -> llvm.masked.load.v16i8.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (93,9)
+   -> llvm.masked.load.v16f32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (95,17)
+   -> llvm.masked.load.v16f32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (96,17)
+   -> llvm.masked.load.v16f32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (97,16)
+   -> llvm.masked.store.v16i32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (103,20)
+   -> llvm.masked.store.v16i32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (103,20)
+   -> llvm.masked.store.v16i8.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (104,24)
+   -> llvm.masked.store.v16f32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (106,17)
+   -> llvm.masked.store.v16f32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (107,17)
+   -> llvm.masked.load.v16i32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (135,31)
+   -> llvm.masked.store.v16i32.p0 /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (135,29)
+
+COMPILE FUNC: _ZN20LineMandelCalculatorD2Ev
+   -> EXTERN: free /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (37,2)
+   -> EXTERN: free /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (40,2)
+   -> EXTERN: free /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (43,2)
+   -> EXTERN: free /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (46,2)
+   -> EXTERN: free /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (49,2)
+   -> INLINE: _ZN20BaseMandelCalculatorD2Ev /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (51,1) (-14970<=325)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (19,7) (30<=250)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (672,9) (30<=250)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (239,7) (-25<=375)
+               -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (230,16) (-30<=375)
+               -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (230,29) (-35<=375)
+                  -> INLINE: _ZNSt14pointer_traitsIPKcE10pointer_toERS0_ /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (211,9) (-15035<=375)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (240,4) (5<=375)
+               -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (245,35) (-35<=375)
+               -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (245,55) (-30<=375)
+               -> INLINE: _ZNSt16allocator_traitsISaIcEE10deallocateERS0_Pcm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (245,9) (-15010<=375)
+                  -> INLINE: _ZN9__gnu_cxx13new_allocatorIcE10deallocateEPcm /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (496,13) (-15010<=375)
+                     -> EXTERN: _ZdlPv /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (145,2)
+         -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (672,23) (-35<=375)
+
+COMPILE FUNC: _GLOBAL__sub_I_LineMandelCalculator.cc
+   -> INLINE: __cxx_global_var_init /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (-14950<=375)
+      -> EXTERN: _ZNSt8ios_base4InitC1Ev /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc (74,25)
+      -> EXTERN: __cxa_atexit /home/xhosad00/avs-proj01/calculators/LineMandelCalculator.cc
+
+---- End Inlining Report ------

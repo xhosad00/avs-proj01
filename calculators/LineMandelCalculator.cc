@@ -19,16 +19,16 @@ const size_t ALIGNMENT = 64;
 LineMandelCalculator::LineMandelCalculator (unsigned matrixBaseSize, unsigned limit) :
 	BaseMandelCalculator(matrixBaseSize, limit, "LineMandelCalculator")
 {
-	// data = (int *)(malloc(height * width * sizeof(int)));
-
-	
-	
+	// allocate buffers (aligned)
 	data = (int *)(aligned_alloc(ALIGNMENT, height * width * sizeof(int)));
-	// std::fill(data, data + (height * width), limit);
+	#pragma omp simd aligned(data : ALIGNMENT)
+	for (int i = 0; i < width * height; i++)
+		data[i] = limit;
 	
 	imag = (float *)(aligned_alloc(ALIGNMENT, width * sizeof(float)));
 	real = (float *)(aligned_alloc(ALIGNMENT, width * sizeof(float)));
-	// hitOverMax = (bool *)(aligned_alloc(ALIGNMENT, width * sizeof(bool)));
+	hitOverMax = (bool *)(aligned_alloc(ALIGNMENT, width * sizeof(bool)));
+	realPrecounted = (float *)(aligned_alloc(ALIGNMENT, width * sizeof(float)));
 }
 
 LineMandelCalculator::~LineMandelCalculator() {
@@ -41,8 +41,11 @@ LineMandelCalculator::~LineMandelCalculator() {
 	free(real);	
 	real = NULL;
 	
-	// free(hitOverMax);	
-	// hitOverMax = NULL;
+	free(hitOverMax);	
+	hitOverMax = NULL;
+
+	free(realPrecounted);	
+	realPrecounted = NULL;
 }
 
 
@@ -50,12 +53,10 @@ int * LineMandelCalculator::calculateMandelbrot () {
 	int *pdata = data;
 	float *zReal = this->real;
 	float *zImag = this->imag;
-	// bool *phitOverMax = this->hitOverMax;
-	
-	#pragma omp simd aligned(pdata : ALIGNMENT)
-	for (int i = 0; i < width * height; i++)
-		pdata[i] = limit;
+	bool *phitOverMax = this->hitOverMax;
+	float *realPre = this->realPrecounted;	
 
+	// calculate only half of height, the rest can be copied due to symmetry
 	for (int row = 0; row < height / 2; row++)
 	{
 		const float rowImag = y_start + row * dy; // current imaginary value for this row
@@ -64,52 +65,56 @@ int * LineMandelCalculator::calculateMandelbrot () {
 		#pragma omp simd aligned(zReal : ALIGNMENT)
 		for (int col = 0; col < width; col++)
 		{
-			zReal[col] = x_start + col * dx;
+			float x = x_start + col * dx;
+			zReal[col] = x;
+			realPre[col] = x;
 		}
 		
 		std::fill(zImag, zImag + width, rowImag);
-		// std::fill(hitOverMax, hitOverMax + width, false); // reset hit buffer
+		std::fill(hitOverMax, hitOverMax + width, false); // reset hit buffer
 
-		bool allFinished = false;
+		bool rowFinished = false;
+
 		// one iteration over entire row
 		for (int i = 0; i < limit; ++i)
 		{
-			// check if all points finished
-			// #pragma omp parallel for reduction(&7 : allFinished)
-			// for (int col = 0; col < width; col++)
-			// {
-			// 	allFinished &= phitOverMax[col];
-			// }
-			// if (allFinished) // stop row calculation if they do
-			// {
-			// 	break;
-			// 	std::cout << "test";
-			// }
-			
+			int allFinished = 0; // variable for reduction
 			// for each column in row
-			// #pragma omp simd 
-			// #pragma omp simd aligned(data, zReal, zImag:ALIGNMENT)
-			#pragma omp simd aligned(pdata, zReal, zImag : ALIGNMENT)
-
+			#pragma omp simd aligned(pdata, zReal, zImag, phitOverMax, realPre : ALIGNMENT) reduction(+ : allFinished) // reduction(&& : allFinished) reduction did not compile correctly
 			for (int col = 0; col < width; col++)
 			{
 				const int pdIdx = row * width + col; // index into data for this point
-				if (pdata[pdIdx] == limit)
-				// if (phitOverMax[pdIdx] == false)
+				if (phitOverMax[col] == false)
 				{
-					float x = x_start + col * dx;
-					float r2 = zReal[col] * zReal[col];
-					float i2 = zImag[col] * zImag[col];
+					float zR = zReal[col];
+					float zI = zImag[col];
+					float x = realPre[col];
+					float r2 = zR * zR;
+					float i2 = zI * zI;
 
-					if (r2 + i2 > 4.0f)
+					if (r2 + i2 > 4.0f) // point will go to infinity
 					{
 						pdata[pdIdx] = i;
-						// phitOverMax[col] = true;
+						phitOverMax[col] = true;
 					}
-					zImag[col] = 2.0f * zReal[col] * zImag[col] + rowImag;
+					zImag[col] = 2.0f * zR * zI + rowImag;
 					zReal[col] = r2 - i2 + x;
 				}
+				else
+				{
+					allFinished += 1;
+				}
 			}
+			
+			if (allFinished == width) // all points in row hit limit, break of of this row
+			{
+				rowFinished = true;
+				break;
+			}
+		}
+		if (rowFinished)
+		{
+			continue;
 		}
 	}
 
@@ -122,38 +127,5 @@ int * LineMandelCalculator::calculateMandelbrot () {
 			pdata[row * width + col] = pdata[(height - row - 1) * width + col];
 		}
 	}
-
-
-	// for (int i = 0; i < height; i++)
-	// {
-	// 	for (int j = 0; j < width; j++)
-	// 	{
-	// 		float x = x_start + j * dx; // current real value
-	// 		float y = y_start + i * dy; // current imaginary value
-	// 		// int value = mandelbrot(x, y, limit);
-	// 		// *(pdata++) = value;
-
-			
-	// 		float zReal = x;
-	// 		float zImag = y;
-
-	// 		int iterCnt = limit;
-	// 		for (int l = 0; l < limit; ++l)
-	// 		{
-	// 			float r2 = zReal * zReal;
-	// 			float i2 = zImag * zImag;
-
-	// 			if (r2 + i2 > 4.0f)
-	// 			{
-	// 				iterCnt = l;
-	// 				break;
-	// 			}
-
-	// 			zImag = 2.0f * zReal * zImag + y;
-	// 			zReal = r2 - i2 + x;
-	// 		}
-	// 		*(pdata++) = iterCnt;			
-	// 	}
-	// }
 	return data;
 }

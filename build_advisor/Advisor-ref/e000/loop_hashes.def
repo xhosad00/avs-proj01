@@ -1,0 +1,4 @@
+# hash file version: 3
+1	7	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	26752	26688	/home/xhosad00/avs-proj01/calculators/RefMandelCalculator.cc	50	228	8289fac3665cf25dceabc195e372ca34	0	1	0	0	0
+2	9	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	26688	27008	/home/xhosad00/avs-proj01/calculators/RefMandelCalculator.cc	48	265	8289fac3665cf25dceabc195e372ca34	0	1	0	0	0
+3	10	/home/xhosad00/avs-proj01/build_advisor/mandelbrot	26848	26752,26755,26939	/home/xhosad00/avs-proj01/calculators/RefMandelCalculator.cc	31	91	8289fac3665cf25dceabc195e372ca34	0	1	0	0	0

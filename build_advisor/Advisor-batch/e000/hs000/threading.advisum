@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="\home\xhosad00\avs-proj01\calculators\BatchMandelCalculator.cc"
+           line_no="68"
+           routine="BatchMandelCalculator::calculateMandelbrot"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="5.399637E-01"
+           trip_counts="96"
+           func_instance="12"
+           priority="0"/>
+  <hotspot filename="\home\xhosad00\avs-proj01\calculators\BatchMandelCalculator.cc"
+           line_no="61"
+           routine="BatchMandelCalculator::calculateMandelbrot"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="5.399637E-01"
+           trip_counts="4096"
+           func_instance="13"
+           priority="0"/>
+  <hotspot filename="\home\xhosad00\avs-proj01\calculators\BatchMandelCalculator.cc"
+           line_no="72"
+           routine="BatchMandelCalculator::calculateMandelbrot"
+           is_vectorized="1"
+           self_time="9.999010E-03"
+           total_time="5.199662E-01"
+           trip_counts="23"
+           func_instance="11"
+           priority="0"/>
+  <hotspot filename="\home\xhosad00\avs-proj01\calculators\BatchMandelCalculator.cc"
+           line_no="61"
+           routine="BatchMandelCalculator::calculateMandelbrot"
+           is_vectorized="2"
+           self_time="5.099672E-01"
+           total_time="5.099672E-01"
+           trip_counts="8"
+           func_instance="9"
+           priority="0"/>
+  <hotspot filename="\home\xhosad00\avs-proj01\calculators\BatchMandelCalculator.cc"
+           line_no="25"
+           routine="BatchMandelCalculator::BatchMandelCalculator"
+           is_vectorized="1"
+           self_time="1.500363E-01"
+           total_time="1.500363E-01"
+           trip_counts="12582912"
+           func_instance="7"
+           priority="0"/>
+</IntelParallelAdvisorSummary >
